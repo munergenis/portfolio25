@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const LoadingScreen = ({ onComplete }) => {
   const [text, setText] = useState("");
-  const fullText = "<HelloWorld/>";
+  const fullText = "<Hello_World/>";
 
   useEffect(() => {
     let index = 0;
@@ -16,9 +16,9 @@ const LoadingScreen = ({ onComplete }) => {
 
         setTimeout(() => {
           onComplete();
-        }, 1000);
+        }, 400);
       }
-    }, 150);
+    }, 120);
 
     return () => {
       clearInterval(interval);
