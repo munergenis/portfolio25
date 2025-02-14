@@ -61,6 +61,17 @@ body {
   .animate-loading-bar {
     animation: loading 0.8s ease infinite;
   }
+
+  .grid-auto-fit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+  }
+  .grid-auto-phone {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }
 
 .reveal {
