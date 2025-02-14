@@ -90,7 +90,7 @@ const Contact = () => {
                   color="white"
                   size="15"
                   stroke="3"
-                />
+                ></l-squircle>
               ) : (
                 "Send Message"
               )}
