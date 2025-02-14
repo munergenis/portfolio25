@@ -1,24 +1,25 @@
+import { useState } from "react";
 import RevealOnScroll from "../RevealOnScroll";
-// import emailjs from "emailjs-com";
+import emailjs from "emailjs-com";
+import "ldrs/squircle";
 
 const Contact = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
   const handleSubmit = async (e) => {
+    setIsLoading(true);
+
     e.preventDefault();
-
     const form = e.target;
-    const name = form.name.value;
-    const email = form.email.value;
-    const message = form.message.value;
-
-    alert(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
 
     try {
-      const res = await fetch("/.netlify/functions/sendEmail", {
-        method: "POST",
-        body: JSON.stringify({ name, email, message }),
-      });
-
-      if (res.ok) {
+      const res = await emailjs.sendForm(
+        "service_wtj5jfc",
+        "template_qex4opo",
+        form,
+        "zLcUmbnvdXUb8nyzx"
+      );
+      if (res.status === 200) {
         form.reset();
       } else {
         alert("Oops! Something went wrong. Please try again later.");
@@ -26,23 +27,9 @@ const Contact = () => {
       // eslint-disable-next-line no-unused-vars
     } catch (error) {
       alert("Oops! Something went wrong. Please try again later.");
+    } finally {
+      setIsLoading(false);
     }
-
-    // emailjs
-    //   .send(
-    //     temp.serviceId,
-    //     temp.templateId,
-    //     { name, email, message },
-    //     temp.publicKey
-    //   )
-    //   .then(() => {
-    //     alert("Messagge Sent!");
-    //   })
-    //   .catch(() => {
-    //     alert("Oops! Something went wrong. Please try again later.");
-    //   });
-
-    // form.reset();
   };
 
   return (
@@ -58,42 +45,55 @@ const Contact = () => {
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div className="relative">
               <input
-                className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/10"
+                className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/10 disabled:opacity-60"
                 type="text"
                 id="name"
                 name="name"
                 placeholder="Your name"
                 aria-label="Your name"
+                disabled={isLoading}
                 required
               />
             </div>
             <div className="relative">
               <input
-                className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/10"
+                className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/10 disabled:opacity-60"
                 type="email"
                 id="email"
                 name="email"
                 placeholder="your@email.com"
                 aria-label="Your email"
+                disabled={isLoading}
                 required
               />
             </div>
             <div className="relative">
               <textarea
-                className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/10"
+                className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/10 disabled:opacity-60"
                 id="message"
                 name="message"
                 placeholder="Your message"
                 aria-label="Your message"
                 rows={5}
+                disabled={isLoading}
                 required
               />
             </div>
             <button
+              className="w-full bg-blue-500 text-white py-3 px-6 rounded-md font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] cursor-pointer disabled:bg-blue-500/60 disabled:pointer-events-none"
               type="submit"
-              className="w-full bg-blue-500 text-white py-3 px-6 rounded-md font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] cursor-pointer"
+              disabled={isLoading}
             >
-              Send Message
+              {isLoading ? (
+                <l-squircle
+                  bg-opacity="0.4"
+                  color="white"
+                  size="15"
+                  stroke="3"
+                />
+              ) : (
+                "Send Message"
+              )}
             </button>
           </form>
         </div>
