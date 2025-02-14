@@ -2,7 +2,7 @@
 import emailjs from "emailjs-com";
 
 export async function handler(event) {
-  if (event.httpMethod !== "Post") {
+  if (event.httpMethod !== "POST") {
     return {
       statusCode: 405,
       body: JSON.stringify({ error: "Method Not Allowed" }),
