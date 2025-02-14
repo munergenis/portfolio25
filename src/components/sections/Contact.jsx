@@ -1,7 +1,8 @@
 import RevealOnScroll from "../RevealOnScroll";
+// import emailjs from "emailjs-com";
 
 const Contact = () => {
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const form = e.target;
@@ -11,7 +12,37 @@ const Contact = () => {
 
     alert(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
 
-    form.reset();
+    try {
+      const res = await fetch("/.netlify/functions/sendEmail", {
+        method: "POST",
+        body: JSON.stringify({ name, email, message }),
+      });
+
+      if (res.ok) {
+        form.reset();
+      } else {
+        alert("Oops! Something went wrong. Please try again later.");
+      }
+      // eslint-disable-next-line no-unused-vars
+    } catch (error) {
+      alert("Oops! Something went wrong. Please try again later.");
+    }
+
+    // emailjs
+    //   .send(
+    //     temp.serviceId,
+    //     temp.templateId,
+    //     { name, email, message },
+    //     temp.publicKey
+    //   )
+    //   .then(() => {
+    //     alert("Messagge Sent!");
+    //   })
+    //   .catch(() => {
+    //     alert("Oops! Something went wrong. Please try again later.");
+    //   });
+
+    // form.reset();
   };
 
   return (
