@@ -4,7 +4,7 @@ import webProjects from "../../data/webProjects";
 const WebProjects = () => {
   return (
     <section
-      id="web-projects"
+      id="web"
       className="min-h-screen flex items-center justify-center py-20"
     >
       <RevealOnScroll>

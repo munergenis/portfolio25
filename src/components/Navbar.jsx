@@ -34,7 +34,7 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
               Home
             </a>
             <a
-              href="#web-projects"
+              href="#web"
               className="text-gray-300 hover:text-blue-400 transition-colors"
             >
               Web Projects
