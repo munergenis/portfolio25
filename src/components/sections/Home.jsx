@@ -28,7 +28,7 @@ const Home = () => {
         </p>
         <div className="flex justify-center space-x-4">
           <a
-            href="#web-projects"
+            href="#web"
             className="bg-blue-500 text-white py-3 px-6 rounded-sm font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.6)]"
           >
             View Web Projects
