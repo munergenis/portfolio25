@@ -1,7 +1,7 @@
 import { useState } from "react";
 import RevealOnScroll from "../RevealOnScroll";
 import emailjs from "emailjs-com";
-import "ldrs/squircle";
+import LoaderIcon from "../LoaderIcon";
 
 const Contact = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -85,12 +85,9 @@ const Contact = () => {
               disabled={isLoading}
             >
               {isLoading ? (
-                <l-squircle
-                  bg-opacity="0.4"
-                  color="white"
-                  size="15"
-                  stroke="3"
-                ></l-squircle>
+                <div className="w-full flex justify-center">
+                  <LoaderIcon />
+                </div>
               ) : (
                 "Send Message"
               )}
