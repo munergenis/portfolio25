@@ -8,10 +8,19 @@ import AboutMe from "./components/sections/AboutMe";
 import WebProjects from "./components/sections/WebProjects";
 import Productions from "./components/sections/Productions";
 import Contact from "./components/sections/Contact";
+import { useEffect } from "react";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (!isLoaded) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [isLoaded]);
 
   return (
     <>
