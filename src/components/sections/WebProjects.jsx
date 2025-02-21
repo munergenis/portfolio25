@@ -58,7 +58,7 @@ const WebProjects = () => {
                         {status !== "In progress" ? (
                           <span>View Project &rarr;</span>
                         ) : (
-                          <span>Peek the progress &rarr;</span>
+                          <span>Check the progress &rarr;</span>
                         )}
                       </a>
                     </div>
