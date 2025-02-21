@@ -166,7 +166,13 @@ const AboutMe = () => {
                       playback functions, lyrics display, and sheet music
                       visualization.
                     </p>
-                    <p className="text-blue-100">Comming soon...</p>
+                    <p className="text-blue-100 text-sm">Comming soon...</p>
+                    <a
+                      className="text-blue-300"
+                      href="https://spotify-clone-temp.netlify.app/"
+                    >
+                      Peek the process &rarr;
+                    </a>
                   </div>
                 </div>
               </div>

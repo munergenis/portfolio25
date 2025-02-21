@@ -35,8 +35,8 @@ const projects = [
     title: "Streaming music platform",
     subtitle: "Volunteer Project for RCCeE",
     imagePath: null,
-    url: null,
-    techStack: ["Nodejs", "Express", "MongoDB", "Typescript", "React"],
+    url: "https://spotify-clone-temp.netlify.app/",
+    techStack: ["Astro", "Typescript", "React"],
     status: "In progress",
   },
 ];

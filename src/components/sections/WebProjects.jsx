@@ -51,14 +51,16 @@ const WebProjects = () => {
                       <span className="text-sm">{status}</span>
                     )}
                     <div className="flex justify-between items-center">
-                      {status !== "In progress" && (
-                        <a
-                          href={url}
-                          className="text-blue-400 hover:text-blue-300 transition-colors mt-4"
-                        >
-                          View Project &rarr;
-                        </a>
-                      )}
+                      <a
+                        href={url}
+                        className="text-blue-400 hover:text-blue-300 transition-colors mt-4"
+                      >
+                        {status !== "In progress" ? (
+                          <span>View Project &rarr;</span>
+                        ) : (
+                          <span>Peek the progress &rarr;</span>
+                        )}
+                      </a>
                     </div>
                   </div>
                 </div>
