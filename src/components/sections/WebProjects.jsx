@@ -52,8 +52,9 @@ const WebProjects = () => {
                     )}
                     <div className="flex justify-between items-center">
                       <a
-                        href={url}
                         className="text-blue-400 hover:text-blue-300 transition-colors mt-4"
+                        href={url}
+                        target="_blank"
                       >
                         {status !== "In progress" ? (
                           <span>View Project &rarr;</span>

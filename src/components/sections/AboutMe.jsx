@@ -104,7 +104,11 @@ const AboutMe = () => {
                       business requirements and deliver a polished, fully
                       functional solution.
                     </p>
-                    <a href="https://cinco55.es/" className="text-blue-300">
+                    <a
+                      className="text-blue-300"
+                      href="https://cinco55.es/"
+                      target="_blank"
+                    >
                       Check the company &rarr;
                     </a>
                   </div>
@@ -129,8 +133,9 @@ const AboutMe = () => {
                       of the frontend to enhance the user experience.
                     </p>
                     <a
-                      href="https://tornejos-tennis-taula-girona.netlify.app"
                       className="text-blue-300"
+                      href="https://tornejos-tennis-taula-girona.netlify.app"
+                      target="_blank"
                     >
                       Check the website &rarr;
                     </a>
@@ -151,7 +156,11 @@ const AboutMe = () => {
                       with the designer and the product owner to create a
                       functional and user-friendly platform.
                     </p>
-                    <a href="https://saher.es" className="text-blue-300">
+                    <a
+                      className="text-blue-300"
+                      href="https://saher.es"
+                      target="_blank"
+                    >
                       Check the website &rarr;
                     </a>
                   </div>
@@ -170,6 +179,7 @@ const AboutMe = () => {
                     <a
                       className="text-blue-300"
                       href="https://spotify-clone-temp.netlify.app/"
+                      target="_blank"
                     >
                       Check the progress &rarr;
                     </a>

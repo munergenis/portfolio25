@@ -19,8 +19,9 @@ const Videos = () => {
             ))}
           </div>
           <a
-            href="#"
             className="block text-blue-400 hover:text-blue-300 transition-colors my-4"
+            href="https://youtu.be/9tRVC37JNDk?si=WSsn7qVWfY-HJoO9"
+            target="_blank"
           >
             View all my productions &rarr;
           </a>
