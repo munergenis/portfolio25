@@ -1,3 +1,6 @@
+import GithubIcon from "../icons/GithubIcon";
+import YoutubeIcon from "../icons/YoutubeIcon";
+
 const Home = () => {
   return (
     <section
@@ -27,18 +30,28 @@ const Home = () => {
           Oh! And I have a couple of fluffy friends with pointy ears.
         </p>
         <div className="flex justify-center space-x-4">
-          <a
-            href="#web"
-            className="bg-blue-500 text-white py-3 px-6 rounded-sm font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.6)]"
-          >
-            View Web Projects
-          </a>
-          <a
-            href="#productions"
-            className="border border-blue-500/50 text-blue-500 py-3 px-6 rounded-sm font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] hover:bg-blue-500/10"
-          >
-            View Productions
-          </a>
+          <div className="flex flex-col gap-4 items-center">
+            <a
+              href="#web"
+              className="bg-blue-500 text-white py-3 px-6 rounded-sm font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.6)]"
+            >
+              View Web Projects
+            </a>
+            <a href="https://github.com/munergenis">
+              <GithubIcon className={`size-8`} />
+            </a>
+          </div>
+          <div className="flex flex-col gap-3 items-center">
+            <a
+              href="#productions"
+              className="border border-blue-500/50 text-blue-500 py-3 px-6 rounded-sm font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] hover:bg-blue-500/10"
+            >
+              View Productions
+            </a>
+            <a href="https://github.com/munergenis">
+              <YoutubeIcon className={`size-10`} />
+            </a>
+          </div>
         </div>
       </div>
     </section>
