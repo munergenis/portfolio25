@@ -37,7 +37,7 @@ const Home = () => {
             >
               View Web Projects
             </a>
-            <a href="https://github.com/munergenis">
+            <a href="https://github.com/munergenis" target="_blank">
               <GithubIcon className={`size-8`} />
             </a>
           </div>
@@ -48,7 +48,10 @@ const Home = () => {
             >
               View Productions
             </a>
-            <a href="https://github.com/munergenis">
+            <a
+              href="https://youtu.be/9tRVC37JNDk?si=WSsn7qVWfY-HJoO9"
+              target="_blank"
+            >
               <YoutubeIcon className={`size-10`} />
             </a>
           </div>
