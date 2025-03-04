@@ -178,7 +178,7 @@ const AboutMe = () => {
                     <p className="text-blue-100 text-sm">Comming soon...</p>
                     <a
                       className="text-blue-300"
-                      href="https://spotify-clone-temp.netlify.app/"
+                      href="https://lloadeu.netlify.app/"
                       target="_blank"
                     >
                       Check the progress &rarr;
