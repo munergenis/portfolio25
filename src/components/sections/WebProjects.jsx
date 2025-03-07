@@ -14,7 +14,15 @@ const WebProjects = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {webProjects.map(
-              ({ title, subtitle, imagePath, url, techStack, status }) => (
+              ({
+                title,
+                subtitle,
+                imagePath,
+                url,
+                repoUrl,
+                techStack,
+                status,
+              }) => (
                 <div
                   key={title}
                   className="p-6 rounded-xl border border-white/10 flex flex-col hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all"
@@ -50,18 +58,29 @@ const WebProjects = () => {
                     {status !== "Completed" && (
                       <span className="text-sm">{status}</span>
                     )}
-                    <div className="flex justify-between items-center">
+                    <div className="flex flex-col">
                       <a
                         className="text-blue-400 hover:text-blue-300 transition-colors mt-4"
                         href={url}
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         {status !== "In progress" ? (
-                          <span>View Project &rarr;</span>
+                          <span>Visit the Web &rarr;</span>
                         ) : (
                           <span>Check the progress &rarr;</span>
                         )}
                       </a>
+                      {repoUrl && (
+                        <a
+                          className="text-blue-400 hover:text-blue-300 transition-colors mt-4"
+                          href={repoUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <span>Check the project &rarr;</span>
+                        </a>
+                      )}
                     </div>
                   </div>
                 </div>

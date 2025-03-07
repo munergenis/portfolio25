@@ -108,6 +108,7 @@ const AboutMe = () => {
                       className="text-blue-300"
                       href="https://cinco55.es/"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Check the company &rarr;
                     </a>
@@ -119,6 +120,34 @@ const AboutMe = () => {
                   🏆 Impactful Projects
                 </h4>
                 <div className="space-y-8 text-gray-300">
+                  <div>
+                    <h5 className="font-semibold">Music Streaming Platform</h5>
+                    <p className="font-light text-sm italic text-pretty mb-2">
+                      Volunteer project of a music streaming platform for RCCeE
+                    </p>
+                    <p className="text-pretty mb-2">
+                      Music streaming platform for RCCeE&apos;s music group,
+                      featuring songs and playlists playback functions, lyrics
+                      and info display, search, and CMS for content management.
+                    </p>
+                    <div className="flex flex-col gap-y-2">
+                      <a
+                        className="text-blue-300"
+                        href="https://lloadeu.netlify.app/"
+                        target="_blank"
+                      >
+                        Visit the website &rarr;
+                      </a>
+                      <a
+                        className="text-blue-300"
+                        href="https://github.com/lloadeu/lloadeu"
+                        target="_blank"
+                      >
+                        Check the project &rarr;
+                      </a>
+                    </div>
+                  </div>
+
                   <div>
                     <h5 className="font-semibold">
                       Table Tennis Tournament Manager
@@ -140,6 +169,7 @@ const AboutMe = () => {
                       Check the website &rarr;
                     </a>
                   </div>
+
                   <div>
                     <h5 className="font-semibold">
                       Saher Website & Product Configurator
@@ -160,28 +190,9 @@ const AboutMe = () => {
                       className="text-blue-300"
                       href="https://saher.es"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Check the website &rarr;
-                    </a>
-                  </div>
-                  <div>
-                    <h5 className="font-semibold">Music Streaming Platform</h5>
-                    <p className="font-light text-sm italic text-pretty mb-2">
-                      Volunteer project of a music streaming platform for RCCeE
-                    </p>
-                    <p className="text-pretty mb-2">
-                      In the process of a volunteer project, developing a music
-                      streaming platform for RCCeE&apos;s music group, featuring
-                      playback functions, lyrics display, and sheet music
-                      visualization.
-                    </p>
-                    <p className="text-blue-100 text-sm">Comming soon...</p>
-                    <a
-                      className="text-blue-300"
-                      href="https://lloadeu.netlify.app/"
-                      target="_blank"
-                    >
-                      Check the progress &rarr;
                     </a>
                   </div>
                 </div>

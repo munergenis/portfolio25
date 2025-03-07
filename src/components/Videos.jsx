@@ -12,7 +12,7 @@ const Videos = () => {
                 key={id}
                 className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all"
               >
-                <div className=" aspect-video">
+                <div className="aspect-video">
                   <lite-youtube videoid={id}></lite-youtube>
                 </div>
               </div>
