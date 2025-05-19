@@ -1,5 +1,5 @@
-import RevealOnScroll from "../RevealOnScroll";
-import webProjects from "../../data/webProjects";
+import RevealOnScroll from '../RevealOnScroll';
+import webProjects from '../../data/webProjects';
 
 const WebProjects = () => {
   return (
@@ -55,22 +55,24 @@ const WebProjects = () => {
                     ))}
                   </div>
                   <div className="mt-auto pt-4">
-                    {status !== "Completed" && (
+                    {status !== 'Completed' && (
                       <span className="text-sm">{status}</span>
                     )}
                     <div className="flex flex-col">
-                      <a
-                        className="text-blue-400 hover:text-blue-300 transition-colors mt-4"
-                        href={url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {status !== "In progress" ? (
-                          <span>Visit the Web &rarr;</span>
-                        ) : (
-                          <span>Check the progress &rarr;</span>
-                        )}
-                      </a>
+                      {url && (
+                        <a
+                          className="text-blue-400 hover:text-blue-300 transition-colors mt-4"
+                          href={url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {status !== 'In progress' ? (
+                            <span>Visit the Web &rarr;</span>
+                          ) : (
+                            <span>Check the progress &rarr;</span>
+                          )}
+                        </a>
+                      )}
                       {repoUrl && (
                         <a
                           className="text-blue-400 hover:text-blue-300 transition-colors mt-4"

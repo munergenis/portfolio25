@@ -1,9 +1,9 @@
-import RevealOnScroll from "../RevealOnScroll";
+import RevealOnScroll from '../RevealOnScroll';
 
 const AboutMe = () => {
-  const frontendSkills = ["JavaScript", "TypeScript", "React", "Tailwind CSS"];
+  const frontendSkills = ['JavaScript', 'TypeScript', 'React', 'Tailwind CSS'];
 
-  const backendSkills = ["Express", "MongoDB", "Mongoose"];
+  const backendSkills = ['Express', 'MongoDB', 'Mongoose'];
 
   return (
     <section
@@ -120,6 +120,28 @@ const AboutMe = () => {
                   🏆 Impactful Projects
                 </h4>
                 <div className="space-y-8 text-gray-300">
+                  <div>
+                    <h5 className="font-semibold">
+                      Livestock Management System
+                    </h5>
+                    <p className="font-light text-sm italic text-pretty mb-2">
+                      Ongoing project for livestock record-keeping and
+                      productivity tracking
+                    </p>
+                    <p className="text-pretty mb-2">
+                      Web application designed to manage livestock operations,
+                      with a primary focus on tracking individual animals and
+                      monitoring birth productivity. The system will allow users
+                      to record key data such as health status, reproduction
+                      history, and performance metrics. It will also include
+                      interactive dashboards to visualize statistics and support
+                      informed decision-making.
+                    </p>
+                    <div className="flex flex-col gap-y-2">
+                      <span className="text-blue-200">Coming soon</span>
+                    </div>
+                  </div>
+
                   <div>
                     <h5 className="font-semibold">Music Streaming Platform</h5>
                     <p className="font-light text-sm italic text-pretty mb-2">
