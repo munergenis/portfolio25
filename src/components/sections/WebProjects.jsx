@@ -69,7 +69,7 @@ const WebProjects = () => {
                           {status !== 'In progress' ? (
                             <span>Visit the Web &rarr;</span>
                           ) : (
-                            <span>Check the progress &rarr;</span>
+                            <span>Check the progress (web) &rarr;</span>
                           )}
                         </a>
                       )}
@@ -80,7 +80,10 @@ const WebProjects = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <span>Check the project &rarr;</span>
+                          <span>
+                            Check the project{' '}
+                            {status === 'In progress' && '(repo)'} &rarr;
+                          </span>
                         </a>
                       )}
                     </div>

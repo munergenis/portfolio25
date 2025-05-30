@@ -3,7 +3,9 @@ const projects = [
     title: 'Cownt',
     subtitle:
       'Project for livestock management and birth productivity tracking',
-    imagePath: '/wip.gif',
+    imagePath: '/cownt-scrnsht.png',
+    url: 'https://cownt.netlify.app',
+    repoUrl: 'https://github.com/munergenis/cownt-front',
     techStack: [
       'React',
       'Typescript',
@@ -12,7 +14,7 @@ const projects = [
       'Express',
       'MongoDB',
     ],
-    status: 'Coming Soon',
+    status: 'In progress',
   },
   {
     title: 'Streaming music platform',

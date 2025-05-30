@@ -138,7 +138,27 @@ const AboutMe = () => {
                       informed decision-making.
                     </p>
                     <div className="flex flex-col gap-y-2">
-                      <span className="text-blue-200">Coming soon</span>
+                      <a
+                        className="text-blue-300"
+                        href="https://cownt.netlify.app/"
+                        target="_blank"
+                      >
+                        Check the progress (web) &rarr;
+                      </a>
+                      <a
+                        className="text-blue-300"
+                        href="https://github.com/munergenis/cownt-front"
+                        target="_blank"
+                      >
+                        Check the front (repo) &rarr;
+                      </a>
+                      <a
+                        className="text-blue-300"
+                        href="https://github.com/munergenis/cownt-api"
+                        target="_blank"
+                      >
+                        Check the back (repo) &rarr;
+                      </a>
                     </div>
                   </div>
 
@@ -188,7 +208,7 @@ const AboutMe = () => {
                       href="https://tornejos-tennis-taula-girona.netlify.app"
                       target="_blank"
                     >
-                      Check the website &rarr;
+                      Visit the website &rarr;
                     </a>
                   </div>
 
@@ -214,7 +234,7 @@ const AboutMe = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Check the website &rarr;
+                      Visit the website &rarr;
                     </a>
                   </div>
                 </div>
